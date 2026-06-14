@@ -1,0 +1,15 @@
+Processed AnnData:
+AnnData object with n_obs × n_vars = 2694 × 2000
+    obs: 'n_genes_by_counts', 'total_counts', 'total_counts_mt', 'pct_counts_mt', 'n_genes', 'leiden'
+    var: 'gene_ids', 'mt', 'n_cells_by_counts', 'mean_counts', 'pct_dropout_by_counts', 'total_counts', 'n_cells', 'highly_variable', 'means', 'dispersions', 'dispersions_norm', 'mean', 'std'
+    uns: 'log1p', 'hvg', 'pca', 'neighbors', 'umap', 'leiden'
+    obsm: 'X_pca', 'X_umap'
+    varm: 'PCs'
+    layers: 'counts'
+    obsp: 'distances', 'connectivities'
+Shape: (2694, 2000)
+obs columns: ['n_genes_by_counts', 'total_counts', 'total_counts_mt', 'pct_counts_mt', 'n_genes', 'leiden']
+var columns: ['gene_ids', 'mt', 'n_cells_by_counts', 'mean_counts', 'pct_dropout_by_counts', 'total_counts', 'n_cells', 'highly_variable', 'means', 'dispersions', 'dispersions_norm', 'mean', 'std']
+obsm keys: ['X_pca', 'X_umap']
+uns keys: ['log1p', 'hvg', 'pca', 'neighbors', 'umap', 'leiden']
+Leiden clusters: ['0', '1', '2', '3', '4', '5', '6', '7', '8']
