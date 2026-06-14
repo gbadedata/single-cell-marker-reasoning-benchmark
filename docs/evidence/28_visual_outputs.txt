@@ -1,0 +1,25 @@
+Visual output generation evidence
+Generated on: Sun Jun 14 23:16:52 UTC 2026
+
+Visual outputs generated.
+Figures:
+- umap_by_leiden: /home/gbadedata/projects/bioinformatics/single-cell-benchmark-suite/single-cell-marker-reasoning-benchmark/results/figures/umap_by_leiden.png
+- umap_by_annotation: /home/gbadedata/projects/bioinformatics/single-cell-benchmark-suite/single-cell-marker-reasoning-benchmark/results/figures/umap_by_annotation.png
+
+Benchmark task summary:
+                   task_family                                                                                                                                                       public_task_file  task_count
+     hidden_cluster_annotation /home/gbadedata/projects/bioinformatics/single-cell-benchmark-suite/single-cell-marker-reasoning-benchmark/benchmark_tasks/public/hidden_cluster_annotation_tasks.json           9
+marker_contradiction_detection      /home/gbadedata/projects/bioinformatics/single-cell-benchmark-suite/single-cell-marker-reasoning-benchmark/benchmark_tasks/public/marker_contradiction_tasks.json           2
+        masked_marker_recovery    /home/gbadedata/projects/bioinformatics/single-cell-benchmark-suite/single-cell-marker-reasoning-benchmark/benchmark_tasks/public/masked_marker_recovery_tasks.json           5
+                         total                                                                                                                                                  all public task files          16
+
+Generated figure files:
+-rw-r--r-- 1 gbadedata gbadedata 51K Jun 15 00:16 results/figures/umap_by_annotation.png
+-rw-r--r-- 1 gbadedata gbadedata 37K Jun 15 00:16 results/figures/umap_by_leiden.png
+
+Benchmark task summary:
+task_family,public_task_file,task_count
+hidden_cluster_annotation,/home/gbadedata/projects/bioinformatics/single-cell-benchmark-suite/single-cell-marker-reasoning-benchmark/benchmark_tasks/public/hidden_cluster_annotation_tasks.json,9
+marker_contradiction_detection,/home/gbadedata/projects/bioinformatics/single-cell-benchmark-suite/single-cell-marker-reasoning-benchmark/benchmark_tasks/public/marker_contradiction_tasks.json,2
+masked_marker_recovery,/home/gbadedata/projects/bioinformatics/single-cell-benchmark-suite/single-cell-marker-reasoning-benchmark/benchmark_tasks/public/masked_marker_recovery_tasks.json,5
+total,all public task files,16

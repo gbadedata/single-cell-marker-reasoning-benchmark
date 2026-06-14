@@ -1,4 +1,4 @@
-.PHONY: test unit-test integration-test download preprocess markers annotate tasks oracles score calibration pipeline evidence docker-build docker-test docker-pipeline-test clean
+.PHONY: test unit-test integration-test download preprocess markers annotate tasks oracles score calibration visuals pipeline evidence docker-build docker-test docker-pipeline-test clean
 
 test:
 	PYTHONPATH=src pytest -q
@@ -33,7 +33,10 @@ score:
 calibration:
 	PYTHONPATH=src python scripts/08_generate_calibration_assets.py
 
-pipeline: download preprocess markers annotate tasks oracles score calibration test
+visuals:
+	PYTHONPATH=src python scripts/09_generate_visual_outputs.py
+
+pipeline: download preprocess markers annotate tasks oracles score calibration visuals test
 
 evidence:
 	mkdir -p docs/evidence
