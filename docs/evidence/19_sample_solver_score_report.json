@@ -1,0 +1,81 @@
+{
+  "summary": {
+    "total_answers": 3,
+    "correct_answers": 3,
+    "accuracy": 1.0,
+    "average_score": 0.923
+  },
+  "scored_answers": [
+    {
+      "task_id": "task_hidden_annotation_cluster_0",
+      "task_type": "hidden_cluster_annotation",
+      "is_correct": true,
+      "score": 0.925,
+      "label_correct": true,
+      "gene_overlap_score": 0.75,
+      "rationale_present": true,
+      "feedback": {
+        "expected_label": "T cells",
+        "submitted_label": "T cells",
+        "expected_supporting_genes": [
+          "CD3D",
+          "CD3E",
+          "IL7R",
+          "LTB"
+        ],
+        "submitted_supporting_genes": [
+          "CD3D",
+          "CD3E",
+          "IL7R"
+        ]
+      }
+    },
+    {
+      "task_id": "task_marker_contradiction_cytotoxic_t_vs_nk",
+      "task_type": "marker_contradiction_detection",
+      "is_correct": true,
+      "score": 1.0,
+      "contradiction_correct": true,
+      "type_overlap": true,
+      "rationale_present": true,
+      "feedback": {
+        "expected_contradiction_type": "T-cell and NK-like cytotoxic marker overlap",
+        "submitted_contradiction_type": "T-cell and NK cytotoxic marker overlap"
+      }
+    },
+    {
+      "task_id": "task_masked_marker_recovery_cluster_4",
+      "task_type": "masked_marker_recovery",
+      "is_correct": true,
+      "score": 0.844,
+      "label_correct": true,
+      "gene_overlap_score": 0.375,
+      "uncertainty_present": true,
+      "rationale_present": true,
+      "feedback": {
+        "expected_label": "NK cells",
+        "submitted_label": "NK cells",
+        "expected_secondary_genes": [
+          "PRF1",
+          "CTSW",
+          "CST7",
+          "HLA-C",
+          "GZMA",
+          "FGFBP2",
+          "HLA-A",
+          "CD247"
+        ],
+        "submitted_secondary_genes": [
+          "PRF1",
+          "CTSW",
+          "CST7"
+        ],
+        "masked_genes": [
+          "GNLY",
+          "GZMB",
+          "NKG7"
+        ]
+      }
+    }
+  ]
+}

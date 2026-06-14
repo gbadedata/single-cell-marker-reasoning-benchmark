@@ -1,0 +1,107 @@
+.
+├── benchmark_tasks
+│   ├── calibration_logs
+│   ├── hidden
+│   │   ├── hidden_cluster_annotation_answers.json
+│   │   ├── marker_contradiction_answers.json
+│   │   └── masked_marker_recovery_answers.json
+│   ├── oracle_outputs
+│   │   ├── hidden_cluster_annotation_oracle_outputs.json
+│   │   ├── marker_contradiction_oracle_outputs.json
+│   │   └── masked_marker_recovery_oracle_outputs.json
+│   └── public
+│       ├── hidden_cluster_annotation_tasks.json
+│       ├── marker_contradiction_tasks.json
+│       └── masked_marker_recovery_tasks.json
+├── configs
+│   └── project_config.yaml
+├── data
+│   ├── external
+│   ├── interim
+│   ├── pbmc3k_raw.h5ad
+│   ├── processed
+│   │   ├── pbmc3k_annotated.h5ad
+│   │   ├── pbmc3k_markers.h5ad
+│   │   └── pbmc3k_processed.h5ad
+│   └── raw
+│       └── pbmc3k_raw.h5ad
+├── docs
+│   └── evidence
+│       ├── 01_project_tree.txt
+│       ├── 02_pytest_day1.txt
+│       ├── 03_dataset_load_output.txt
+│       ├── 04_project_tree_after_preprocessing.txt
+│       ├── 05_pytest_after_preprocessing.txt
+│       ├── 06_preprocessing_output.txt
+│       ├── 07_pytest_after_annotation.txt
+│       ├── 08_marker_ranking_output.txt
+│       ├── 09_annotation_output.txt
+│       ├── 10_project_tree_after_annotation.txt
+│       ├── 11_benchmark_generation_output.txt
+│       ├── 12_pytest_after_benchmark_tasks.txt
+│       ├── 13_benchmark_task_tree.txt
+│       ├── 14_oracle_generation_output.txt
+│       ├── 15_pytest_after_oracles.txt
+│       ├── 16_benchmark_tree_after_oracles.txt
+│       ├── 17_solver_scoring_output.txt
+│       ├── 18_pytest_after_scoring.txt
+│       ├── 19_sample_solver_score_report.json
+│       └── 20_project_tree_after_scoring.txt
+├── environment.yml
+├── notebooks
+├── results
+│   ├── figures
+│   ├── metrics
+│   ├── reports
+│   │   └── sample_solver_score_report.json
+│   └── tables
+│       ├── cluster_annotations.csv
+│       ├── cluster_marker_genes.csv
+│       └── cluster_marker_genes_filtered.csv
+├── sample_solver_answers
+│   └── sample_answers.json
+├── scripts
+│   ├── 01_download_data.py
+│   ├── 02_preprocess.py
+│   ├── 03_rank_markers.py
+│   ├── 04_annotate_clusters.py
+│   ├── 05_generate_benchmark_tasks.py
+│   ├── 06_generate_oracle_outputs.py
+│   └── 07_score_solver_answers.py
+├── src
+│   └── scbench
+│       ├── __init__.py
+│       ├── __pycache__
+│       │   ├── __init__.cpython-310.pyc
+│       │   ├── analysis.cpython-310.pyc
+│       │   ├── annotation.cpython-310.pyc
+│       │   ├── benchmark_tasks.cpython-310.pyc
+│       │   ├── oracles.cpython-310.pyc
+│       │   ├── preprocessing.cpython-310.pyc
+│       │   ├── scoring.cpython-310.pyc
+│       │   └── validators.cpython-310.pyc
+│       ├── analysis.py
+│       ├── annotation.py
+│       ├── benchmark_tasks.py
+│       ├── oracles.py
+│       ├── preprocessing.py
+│       ├── scoring.py
+│       └── validators.py
+└── tests
+    ├── __pycache__
+    │   ├── test_annotation.cpython-310-pytest-9.0.3.pyc
+    │   ├── test_benchmark_tasks.cpython-310-pytest-9.0.3.pyc
+    │   ├── test_data_io.cpython-310-pytest-9.0.3.pyc
+    │   ├── test_oracles.cpython-310-pytest-9.0.3.pyc
+    │   ├── test_preprocessing.cpython-310-pytest-9.0.3.pyc
+    │   ├── test_scoring.cpython-310-pytest-9.0.3.pyc
+    │   └── test_validators.cpython-310-pytest-9.0.3.pyc
+    ├── test_annotation.py
+    ├── test_benchmark_tasks.py
+    ├── test_data_io.py
+    ├── test_oracles.py
+    ├── test_preprocessing.py
+    ├── test_scoring.py
+    └── test_validators.py
+
+27 directories, 78 files

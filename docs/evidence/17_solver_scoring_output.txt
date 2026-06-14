@@ -1,0 +1,10 @@
+Solver answer scoring complete.
+{
+  "total_answers": 3,
+  "correct_answers": 3,
+  "accuracy": 1.0,
+  "average_score": 0.923
+}
+
+Detailed report saved to:
+results/reports/sample_solver_score_report.json
