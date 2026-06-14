@@ -1,0 +1,29 @@
+{
+  "project": "single-cell-marker-reasoning-benchmark",
+  "created_at_utc": "2026-06-14T20:02:53.262323+00:00",
+  "review_scope": "Initial human design review before external solver calibration.",
+  "important_limitation": "This is not yet empirical frontier-model calibration. It is a design-stage difficulty review. Real calibration requires running tasks against one or more human or model solvers and recording scored attempts.",
+  "task_type_reviews": [
+    {
+      "task_type": "hidden_cluster_annotation",
+      "expected_count": 9,
+      "initial_difficulty": "medium",
+      "risk": "Some clusters may be too easy because canonical markers are visible.",
+      "planned_revision_strategy": "Increase difficulty by masking canonical markers or requiring uncertainty-aware annotation."
+    },
+    {
+      "task_type": "marker_contradiction_detection",
+      "expected_count": 2,
+      "initial_difficulty": "hard",
+      "risk": "Ambiguity may be underspecified unless supporting gene evidence is required.",
+      "planned_revision_strategy": "Require contradiction type, supporting genes, and explanation of why a single-label answer is insufficient."
+    },
+    {
+      "task_type": "masked_marker_recovery",
+      "expected_count": 5,
+      "initial_difficulty": "expert",
+      "risk": "Could become too hard if secondary markers are weak or non-specific.",
+      "planned_revision_strategy": "Keep candidate labels visible, require uncertainty comments, and score partial gene evidence."
+    }
+  ]
+}

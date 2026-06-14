@@ -1,0 +1,26 @@
+{
+  "project": "single-cell-marker-reasoning-benchmark",
+  "created_at_utc": "2026-06-14T20:02:53.259730+00:00",
+  "purpose": "Template for recording benchmark task calibration against human solvers, LLMs, or other model systems.",
+  "difficulty_categories": {
+    "too_easy": "Most solvers answer correctly with shallow marker lookup or obvious label matching.",
+    "target": "Solver must combine marker evidence, ambiguity handling, and biological reasoning.",
+    "too_hard": "Task is under-specified, ambiguous beyond reasonable evidence, or requires unavailable domain knowledge.",
+    "too_ambiguous": "Multiple answers are defensible but the validator expects only one narrow answer."
+  },
+  "calibration_fields": {
+    "task_id": "Unique benchmark task identifier.",
+    "task_type": "hidden_cluster_annotation | marker_contradiction_detection | masked_marker_recovery",
+    "solver_type": "human | LLM | script | other",
+    "solver_name": "Name/version of solver, if applicable.",
+    "attempt_number": "Integer attempt number.",
+    "solver_answer_summary": "Short summary of solver answer.",
+    "score": "Numeric validator score.",
+    "passed": "Boolean correctness from validator.",
+    "failure_mode": "marker_lookup_only | wrong_label | missing_uncertainty | weak_rationale | ambiguity_failure | unavailable_information | other",
+    "difficulty_assessment": "too_easy | target | too_hard | too_ambiguous",
+    "revision_required": "Boolean.",
+    "revision_plan": "How the task should be changed.",
+    "reviewer_notes": "Human reviewer comments."
+  }
+}

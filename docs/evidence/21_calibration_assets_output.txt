@@ -1,0 +1,5 @@
+Calibration assets generated.
+- benchmark_tasks/calibration_logs/calibration_log_template.json
+  keys: ['project', 'created_at_utc', 'purpose', 'difficulty_categories', 'calibration_fields']
+- benchmark_tasks/calibration_logs/initial_task_difficulty_review.json
+  keys: ['project', 'created_at_utc', 'review_scope', 'important_limitation', 'task_type_reviews']
