@@ -1,0 +1,24 @@
+Marker ranking complete.
+AnnData object with n_obs × n_vars = 2694 × 2000
+    obs: 'n_genes_by_counts', 'total_counts', 'total_counts_mt', 'pct_counts_mt', 'n_genes', 'leiden'
+    var: 'gene_ids', 'mt', 'n_cells_by_counts', 'mean_counts', 'pct_dropout_by_counts', 'total_counts', 'n_cells', 'highly_variable', 'means', 'dispersions', 'dispersions_norm', 'mean', 'std'
+    uns: 'hvg', 'leiden', 'log1p', 'neighbors', 'pca', 'umap', 'rank_genes_groups'
+    obsm: 'X_pca', 'X_umap'
+    varm: 'PCs'
+    layers: 'counts'
+    obsp: 'connectivities', 'distances'
+Raw marker table shape: (450, 6)
+Filtered marker table shape: (169, 6)
+Raw marker columns: ['group', 'names', 'scores', 'logfoldchanges', 'pvals', 'pvals_adj']
+Clusters: ['0', '1', '2', '3', '4', '5', '6', '7', '8']
+
+Top filtered markers per cluster:
+Cluster 0: LDHB, CD3D, LTB, CD3E, IL32, IL7R, JUNB, NPM1, TMEM66
+Cluster 1: LYZ, S100A9, S100A8, TYROBP, FTL, CST3, FTH1, FCN1, S100A6, LGALS1
+Cluster 2: CD74, CD79A, HLA-DRA, CD79B, HLA-DPB1, MS4A1, HLA-DQA1, HLA-DRB1, HLA-DQB1, CD37
+Cluster 3: CCL5, NKG7, GZMA, CST7, IL32, CTSW, HLA-C, GZMK, HLA-A, CD3D
+Cluster 4: NKG7, GNLY, GZMB, PRF1, CTSW, CST7, HLA-C, GZMA, FGFBP2, HLA-A
+Cluster 5: LST1, FCER1G, FCGR3A, AIF1, COTL1, IFITM2, IFITM3, FTH1, SAT1, SERPINA1
+Cluster 6: HLA-DPA1, HLA-DPB1, HLA-DRA, HLA-DRB1, CD74, HLA-DQA1, CST3, FCER1A, HLA-DRB5, HLA-DMA
+Cluster 7: SDPR, PF4, GNG11, PPBP, NRGN, GPX1, SPARC, TPM4, RGS18, CALM3
+Cluster 8: KIAA0101, ACTG1, CFL1, GAPDH, SLC25A5, TYMS, TUBB, ZWINT, ACTB, PSMB2
