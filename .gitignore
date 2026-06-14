@@ -34,11 +34,13 @@ results/reports/*
 !results/metrics/.gitkeep
 !results/reports/.gitkeep
 
-# Hidden benchmark answers
+# Benchmark answers and oracle outputs
 benchmark_tasks/hidden/*
 benchmark_tasks/oracle_outputs/*
 !benchmark_tasks/hidden/.gitkeep
 !benchmark_tasks/oracle_outputs/.gitkeep
+!benchmark_tasks/hidden/*.json
+!benchmark_tasks/oracle_outputs/*.json
 
 # OS/editor
 .DS_Store

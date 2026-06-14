@@ -1,0 +1,18 @@
+{
+  "answers": [
+    {
+      "task_id": "task_marker_contradiction_cytotoxic_t_vs_nk",
+      "contradiction_detected": true,
+      "contradiction_type": "T-cell and NK-like cytotoxic marker overlap",
+      "cluster_a_label": "Cytotoxic T cells",
+      "cluster_b_label": "NK cells"
+    },
+    {
+      "task_id": "task_marker_contradiction_apc_bcell_vs_dc",
+      "contradiction_detected": true,
+      "contradiction_type": "antigen-presentation marker overlap",
+      "cluster_a_label": "B cells",
+      "cluster_b_label": "Dendritic cells"
+    }
+  ]
+}

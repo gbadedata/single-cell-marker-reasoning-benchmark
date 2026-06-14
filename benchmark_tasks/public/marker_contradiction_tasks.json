@@ -1,0 +1,90 @@
+{
+  "tasks": [
+    {
+      "task_id": "task_marker_contradiction_cytotoxic_t_vs_nk",
+      "task_type": "marker_contradiction_detection",
+      "difficulty": "hard",
+      "scientific_premise": "Two PBMC clusters show partially overlapping marker evidence. The solver must identify whether the annotation is straightforward or ambiguous.",
+      "input_given_to_solver": {
+        "cluster_a": "3",
+        "cluster_a_markers": [
+          "CCL5",
+          "NKG7",
+          "GZMA",
+          "CST7",
+          "IL32",
+          "CTSW",
+          "HLA-C",
+          "GZMK",
+          "HLA-A",
+          "CD3D"
+        ],
+        "cluster_b": "4",
+        "cluster_b_markers": [
+          "NKG7",
+          "GNLY",
+          "GZMB",
+          "PRF1",
+          "CTSW",
+          "CST7",
+          "HLA-C",
+          "GZMA",
+          "FGFBP2",
+          "HLA-A"
+        ]
+      },
+      "question": "Identify the likely source of marker ambiguity or contradiction between these clusters.",
+      "expected_answer_schema": {
+        "contradiction_detected": "boolean",
+        "contradiction_type": "string",
+        "supporting_genes": [
+          "string"
+        ],
+        "rationale": "string"
+      }
+    },
+    {
+      "task_id": "task_marker_contradiction_apc_bcell_vs_dc",
+      "task_type": "marker_contradiction_detection",
+      "difficulty": "hard",
+      "scientific_premise": "Two PBMC clusters show partially overlapping marker evidence. The solver must identify whether the annotation is straightforward or ambiguous.",
+      "input_given_to_solver": {
+        "cluster_a": "2",
+        "cluster_a_markers": [
+          "CD74",
+          "CD79A",
+          "HLA-DRA",
+          "CD79B",
+          "HLA-DPB1",
+          "MS4A1",
+          "HLA-DQA1",
+          "HLA-DRB1",
+          "HLA-DQB1",
+          "CD37"
+        ],
+        "cluster_b": "6",
+        "cluster_b_markers": [
+          "HLA-DPA1",
+          "HLA-DPB1",
+          "HLA-DRA",
+          "HLA-DRB1",
+          "CD74",
+          "HLA-DQA1",
+          "CST3",
+          "FCER1A",
+          "HLA-DRB5",
+          "HLA-DMA"
+        ]
+      },
+      "question": "Identify the likely source of marker ambiguity or contradiction between these clusters.",
+      "expected_answer_schema": {
+        "contradiction_detected": "boolean",
+        "contradiction_type": "string",
+        "supporting_genes": [
+          "string"
+        ],
+        "rationale": "string"
+      }
+    }
+  ]
+}

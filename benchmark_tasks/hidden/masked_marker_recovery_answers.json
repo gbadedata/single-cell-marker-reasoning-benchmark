@@ -1,0 +1,127 @@
+{
+  "answers": [
+    {
+      "task_id": "task_masked_marker_recovery_cluster_0",
+      "oracle_label": "T cells",
+      "masked_genes": [
+        "CD3D",
+        "CD3E",
+        "IL7R"
+      ],
+      "full_marker_genes": [
+        "LDHB",
+        "CD3D",
+        "LTB",
+        "CD3E",
+        "IL32",
+        "IL7R",
+        "JUNB",
+        "NPM1",
+        "TMEM66"
+      ]
+    },
+    {
+      "task_id": "task_masked_marker_recovery_cluster_1",
+      "oracle_label": "CD14+ monocytes",
+      "masked_genes": [
+        "LYZ",
+        "S100A8",
+        "S100A9"
+      ],
+      "full_marker_genes": [
+        "LYZ",
+        "S100A9",
+        "S100A8",
+        "TYROBP",
+        "FTL",
+        "CST3",
+        "FTH1",
+        "FCN1",
+        "S100A6",
+        "LGALS1",
+        "LGALS2",
+        "S100A4",
+        "AIF1",
+        "GSTP1",
+        "LST1"
+      ]
+    },
+    {
+      "task_id": "task_masked_marker_recovery_cluster_2",
+      "oracle_label": "B cells",
+      "masked_genes": [
+        "CD79A",
+        "CD79B",
+        "MS4A1"
+      ],
+      "full_marker_genes": [
+        "CD74",
+        "CD79A",
+        "HLA-DRA",
+        "CD79B",
+        "HLA-DPB1",
+        "MS4A1",
+        "HLA-DQA1",
+        "HLA-DRB1",
+        "HLA-DQB1",
+        "CD37",
+        "HLA-DPA1",
+        "HLA-DRB5",
+        "TCL1A",
+        "LINC00926",
+        "HLA-DMA"
+      ]
+    },
+    {
+      "task_id": "task_masked_marker_recovery_cluster_4",
+      "oracle_label": "NK cells",
+      "masked_genes": [
+        "GNLY",
+        "GZMB",
+        "NKG7"
+      ],
+      "full_marker_genes": [
+        "NKG7",
+        "GNLY",
+        "GZMB",
+        "PRF1",
+        "CTSW",
+        "CST7",
+        "HLA-C",
+        "GZMA",
+        "FGFBP2",
+        "HLA-A",
+        "CD247",
+        "SPON2",
+        "FCGR3A",
+        "HLA-B",
+        "GZMM"
+      ]
+    },
+    {
+      "task_id": "task_masked_marker_recovery_cluster_7",
+      "oracle_label": "Platelets",
+      "masked_genes": [
+        "PF4",
+        "PPBP"
+      ],
+      "full_marker_genes": [
+        "SDPR",
+        "PF4",
+        "GNG11",
+        "PPBP",
+        "NRGN",
+        "GPX1",
+        "SPARC",
+        "TPM4",
+        "RGS18",
+        "CALM3",
+        "RGS10",
+        "TAGLN2",
+        "MYL6",
+        "OAZ1",
+        "GP9"
+      ]
+    }
+  ]
+}

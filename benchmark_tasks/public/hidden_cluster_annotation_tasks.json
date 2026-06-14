@@ -1,0 +1,355 @@
+{
+  "tasks": [
+    {
+      "task_id": "task_hidden_annotation_cluster_0",
+      "task_type": "hidden_cluster_annotation",
+      "difficulty": "medium",
+      "scientific_premise": "A PBMC single-cell cluster has been processed through a Scanpy workflow. The solver receives filtered marker genes but not the cluster label.",
+      "input_given_to_solver": {
+        "cluster_id": "0",
+        "top_filtered_marker_genes": [
+          "LDHB",
+          "CD3D",
+          "LTB",
+          "CD3E",
+          "IL32",
+          "IL7R",
+          "JUNB",
+          "NPM1"
+        ],
+        "candidate_labels": [
+          "B cells",
+          "CD14+ monocytes",
+          "Cycling cells",
+          "Cytotoxic T cells",
+          "Dendritic cells",
+          "FCGR3A+ monocytes",
+          "NK cells",
+          "Platelets",
+          "T cells"
+        ]
+      },
+      "question": "Infer the most likely cell-type label for this cluster and provide supporting marker evidence.",
+      "expected_answer_schema": {
+        "predicted_label": "string",
+        "supporting_genes": [
+          "string"
+        ],
+        "confidence": "low|medium|high",
+        "rationale": "string"
+      }
+    },
+    {
+      "task_id": "task_hidden_annotation_cluster_1",
+      "task_type": "hidden_cluster_annotation",
+      "difficulty": "medium",
+      "scientific_premise": "A PBMC single-cell cluster has been processed through a Scanpy workflow. The solver receives filtered marker genes but not the cluster label.",
+      "input_given_to_solver": {
+        "cluster_id": "1",
+        "top_filtered_marker_genes": [
+          "LYZ",
+          "S100A9",
+          "S100A8",
+          "TYROBP",
+          "FTL",
+          "CST3",
+          "FTH1",
+          "FCN1"
+        ],
+        "candidate_labels": [
+          "B cells",
+          "CD14+ monocytes",
+          "Cycling cells",
+          "Cytotoxic T cells",
+          "Dendritic cells",
+          "FCGR3A+ monocytes",
+          "NK cells",
+          "Platelets",
+          "T cells"
+        ]
+      },
+      "question": "Infer the most likely cell-type label for this cluster and provide supporting marker evidence.",
+      "expected_answer_schema": {
+        "predicted_label": "string",
+        "supporting_genes": [
+          "string"
+        ],
+        "confidence": "low|medium|high",
+        "rationale": "string"
+      }
+    },
+    {
+      "task_id": "task_hidden_annotation_cluster_2",
+      "task_type": "hidden_cluster_annotation",
+      "difficulty": "medium",
+      "scientific_premise": "A PBMC single-cell cluster has been processed through a Scanpy workflow. The solver receives filtered marker genes but not the cluster label.",
+      "input_given_to_solver": {
+        "cluster_id": "2",
+        "top_filtered_marker_genes": [
+          "CD74",
+          "CD79A",
+          "HLA-DRA",
+          "CD79B",
+          "HLA-DPB1",
+          "MS4A1",
+          "HLA-DQA1",
+          "HLA-DRB1"
+        ],
+        "candidate_labels": [
+          "B cells",
+          "CD14+ monocytes",
+          "Cycling cells",
+          "Cytotoxic T cells",
+          "Dendritic cells",
+          "FCGR3A+ monocytes",
+          "NK cells",
+          "Platelets",
+          "T cells"
+        ]
+      },
+      "question": "Infer the most likely cell-type label for this cluster and provide supporting marker evidence.",
+      "expected_answer_schema": {
+        "predicted_label": "string",
+        "supporting_genes": [
+          "string"
+        ],
+        "confidence": "low|medium|high",
+        "rationale": "string"
+      }
+    },
+    {
+      "task_id": "task_hidden_annotation_cluster_3",
+      "task_type": "hidden_cluster_annotation",
+      "difficulty": "medium",
+      "scientific_premise": "A PBMC single-cell cluster has been processed through a Scanpy workflow. The solver receives filtered marker genes but not the cluster label.",
+      "input_given_to_solver": {
+        "cluster_id": "3",
+        "top_filtered_marker_genes": [
+          "CCL5",
+          "NKG7",
+          "GZMA",
+          "CST7",
+          "IL32",
+          "CTSW",
+          "HLA-C",
+          "GZMK"
+        ],
+        "candidate_labels": [
+          "B cells",
+          "CD14+ monocytes",
+          "Cycling cells",
+          "Cytotoxic T cells",
+          "Dendritic cells",
+          "FCGR3A+ monocytes",
+          "NK cells",
+          "Platelets",
+          "T cells"
+        ]
+      },
+      "question": "Infer the most likely cell-type label for this cluster and provide supporting marker evidence.",
+      "expected_answer_schema": {
+        "predicted_label": "string",
+        "supporting_genes": [
+          "string"
+        ],
+        "confidence": "low|medium|high",
+        "rationale": "string"
+      }
+    },
+    {
+      "task_id": "task_hidden_annotation_cluster_4",
+      "task_type": "hidden_cluster_annotation",
+      "difficulty": "medium",
+      "scientific_premise": "A PBMC single-cell cluster has been processed through a Scanpy workflow. The solver receives filtered marker genes but not the cluster label.",
+      "input_given_to_solver": {
+        "cluster_id": "4",
+        "top_filtered_marker_genes": [
+          "NKG7",
+          "GNLY",
+          "GZMB",
+          "PRF1",
+          "CTSW",
+          "CST7",
+          "HLA-C",
+          "GZMA"
+        ],
+        "candidate_labels": [
+          "B cells",
+          "CD14+ monocytes",
+          "Cycling cells",
+          "Cytotoxic T cells",
+          "Dendritic cells",
+          "FCGR3A+ monocytes",
+          "NK cells",
+          "Platelets",
+          "T cells"
+        ]
+      },
+      "question": "Infer the most likely cell-type label for this cluster and provide supporting marker evidence.",
+      "expected_answer_schema": {
+        "predicted_label": "string",
+        "supporting_genes": [
+          "string"
+        ],
+        "confidence": "low|medium|high",
+        "rationale": "string"
+      }
+    },
+    {
+      "task_id": "task_hidden_annotation_cluster_5",
+      "task_type": "hidden_cluster_annotation",
+      "difficulty": "medium",
+      "scientific_premise": "A PBMC single-cell cluster has been processed through a Scanpy workflow. The solver receives filtered marker genes but not the cluster label.",
+      "input_given_to_solver": {
+        "cluster_id": "5",
+        "top_filtered_marker_genes": [
+          "LST1",
+          "FCER1G",
+          "FCGR3A",
+          "AIF1",
+          "COTL1",
+          "IFITM2",
+          "IFITM3",
+          "FTH1"
+        ],
+        "candidate_labels": [
+          "B cells",
+          "CD14+ monocytes",
+          "Cycling cells",
+          "Cytotoxic T cells",
+          "Dendritic cells",
+          "FCGR3A+ monocytes",
+          "NK cells",
+          "Platelets",
+          "T cells"
+        ]
+      },
+      "question": "Infer the most likely cell-type label for this cluster and provide supporting marker evidence.",
+      "expected_answer_schema": {
+        "predicted_label": "string",
+        "supporting_genes": [
+          "string"
+        ],
+        "confidence": "low|medium|high",
+        "rationale": "string"
+      }
+    },
+    {
+      "task_id": "task_hidden_annotation_cluster_6",
+      "task_type": "hidden_cluster_annotation",
+      "difficulty": "medium",
+      "scientific_premise": "A PBMC single-cell cluster has been processed through a Scanpy workflow. The solver receives filtered marker genes but not the cluster label.",
+      "input_given_to_solver": {
+        "cluster_id": "6",
+        "top_filtered_marker_genes": [
+          "HLA-DPA1",
+          "HLA-DPB1",
+          "HLA-DRA",
+          "HLA-DRB1",
+          "CD74",
+          "HLA-DQA1",
+          "CST3",
+          "FCER1A"
+        ],
+        "candidate_labels": [
+          "B cells",
+          "CD14+ monocytes",
+          "Cycling cells",
+          "Cytotoxic T cells",
+          "Dendritic cells",
+          "FCGR3A+ monocytes",
+          "NK cells",
+          "Platelets",
+          "T cells"
+        ]
+      },
+      "question": "Infer the most likely cell-type label for this cluster and provide supporting marker evidence.",
+      "expected_answer_schema": {
+        "predicted_label": "string",
+        "supporting_genes": [
+          "string"
+        ],
+        "confidence": "low|medium|high",
+        "rationale": "string"
+      }
+    },
+    {
+      "task_id": "task_hidden_annotation_cluster_7",
+      "task_type": "hidden_cluster_annotation",
+      "difficulty": "medium",
+      "scientific_premise": "A PBMC single-cell cluster has been processed through a Scanpy workflow. The solver receives filtered marker genes but not the cluster label.",
+      "input_given_to_solver": {
+        "cluster_id": "7",
+        "top_filtered_marker_genes": [
+          "SDPR",
+          "PF4",
+          "GNG11",
+          "PPBP",
+          "NRGN",
+          "GPX1",
+          "SPARC",
+          "TPM4"
+        ],
+        "candidate_labels": [
+          "B cells",
+          "CD14+ monocytes",
+          "Cycling cells",
+          "Cytotoxic T cells",
+          "Dendritic cells",
+          "FCGR3A+ monocytes",
+          "NK cells",
+          "Platelets",
+          "T cells"
+        ]
+      },
+      "question": "Infer the most likely cell-type label for this cluster and provide supporting marker evidence.",
+      "expected_answer_schema": {
+        "predicted_label": "string",
+        "supporting_genes": [
+          "string"
+        ],
+        "confidence": "low|medium|high",
+        "rationale": "string"
+      }
+    },
+    {
+      "task_id": "task_hidden_annotation_cluster_8",
+      "task_type": "hidden_cluster_annotation",
+      "difficulty": "medium",
+      "scientific_premise": "A PBMC single-cell cluster has been processed through a Scanpy workflow. The solver receives filtered marker genes but not the cluster label.",
+      "input_given_to_solver": {
+        "cluster_id": "8",
+        "top_filtered_marker_genes": [
+          "KIAA0101",
+          "ACTG1",
+          "CFL1",
+          "GAPDH",
+          "SLC25A5",
+          "TYMS",
+          "TUBB",
+          "ZWINT"
+        ],
+        "candidate_labels": [
+          "B cells",
+          "CD14+ monocytes",
+          "Cycling cells",
+          "Cytotoxic T cells",
+          "Dendritic cells",
+          "FCGR3A+ monocytes",
+          "NK cells",
+          "Platelets",
+          "T cells"
+        ]
+      },
+      "question": "Infer the most likely cell-type label for this cluster and provide supporting marker evidence.",
+      "expected_answer_schema": {
+        "predicted_label": "string",
+        "supporting_genes": [
+          "string"
+        ],
+        "confidence": "low|medium|high",
+        "rationale": "string"
+      }
+    }
+  ]
+}

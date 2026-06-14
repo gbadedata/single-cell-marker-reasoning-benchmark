@@ -1,0 +1,11 @@
+Benchmark task generation complete.
+
+Public task files:
+- benchmark_tasks/public/hidden_cluster_annotation_tasks.json: 9 tasks
+- benchmark_tasks/public/marker_contradiction_tasks.json: 2 tasks
+- benchmark_tasks/public/masked_marker_recovery_tasks.json: 5 tasks
+
+Hidden answer files:
+- benchmark_tasks/hidden/hidden_cluster_annotation_answers.json: 9 hidden answers
+- benchmark_tasks/hidden/marker_contradiction_answers.json: 2 hidden answers
+- benchmark_tasks/hidden/masked_marker_recovery_answers.json: 5 hidden answers

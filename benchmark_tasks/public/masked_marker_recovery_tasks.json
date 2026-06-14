@@ -1,0 +1,219 @@
+{
+  "tasks": [
+    {
+      "task_id": "task_masked_marker_recovery_cluster_0",
+      "task_type": "masked_marker_recovery",
+      "difficulty": "expert",
+      "scientific_premise": "Canonical marker genes have been deliberately removed. The solver must infer the likely cell identity from secondary evidence.",
+      "input_given_to_solver": {
+        "cluster_id": "0",
+        "visible_filtered_marker_genes": [
+          "LDHB",
+          "LTB",
+          "IL32",
+          "JUNB",
+          "NPM1",
+          "TMEM66"
+        ],
+        "number_of_masked_markers": 3,
+        "candidate_labels": [
+          "B cells",
+          "CD14+ monocytes",
+          "Cycling cells",
+          "Cytotoxic T cells",
+          "Dendritic cells",
+          "FCGR3A+ monocytes",
+          "NK cells",
+          "Platelets",
+          "T cells"
+        ]
+      },
+      "question": "Infer the most likely cell-type label despite masked canonical markers.",
+      "expected_answer_schema": {
+        "predicted_label": "string",
+        "secondary_supporting_genes": [
+          "string"
+        ],
+        "uncertainty_comment": "string",
+        "rationale": "string"
+      }
+    },
+    {
+      "task_id": "task_masked_marker_recovery_cluster_1",
+      "task_type": "masked_marker_recovery",
+      "difficulty": "expert",
+      "scientific_premise": "Canonical marker genes have been deliberately removed. The solver must infer the likely cell identity from secondary evidence.",
+      "input_given_to_solver": {
+        "cluster_id": "1",
+        "visible_filtered_marker_genes": [
+          "TYROBP",
+          "FTL",
+          "CST3",
+          "FTH1",
+          "FCN1",
+          "S100A6",
+          "LGALS1",
+          "LGALS2",
+          "S100A4",
+          "AIF1",
+          "GSTP1",
+          "LST1"
+        ],
+        "number_of_masked_markers": 3,
+        "candidate_labels": [
+          "B cells",
+          "CD14+ monocytes",
+          "Cycling cells",
+          "Cytotoxic T cells",
+          "Dendritic cells",
+          "FCGR3A+ monocytes",
+          "NK cells",
+          "Platelets",
+          "T cells"
+        ]
+      },
+      "question": "Infer the most likely cell-type label despite masked canonical markers.",
+      "expected_answer_schema": {
+        "predicted_label": "string",
+        "secondary_supporting_genes": [
+          "string"
+        ],
+        "uncertainty_comment": "string",
+        "rationale": "string"
+      }
+    },
+    {
+      "task_id": "task_masked_marker_recovery_cluster_2",
+      "task_type": "masked_marker_recovery",
+      "difficulty": "expert",
+      "scientific_premise": "Canonical marker genes have been deliberately removed. The solver must infer the likely cell identity from secondary evidence.",
+      "input_given_to_solver": {
+        "cluster_id": "2",
+        "visible_filtered_marker_genes": [
+          "CD74",
+          "HLA-DRA",
+          "HLA-DPB1",
+          "HLA-DQA1",
+          "HLA-DRB1",
+          "HLA-DQB1",
+          "CD37",
+          "HLA-DPA1",
+          "HLA-DRB5",
+          "TCL1A",
+          "LINC00926",
+          "HLA-DMA"
+        ],
+        "number_of_masked_markers": 3,
+        "candidate_labels": [
+          "B cells",
+          "CD14+ monocytes",
+          "Cycling cells",
+          "Cytotoxic T cells",
+          "Dendritic cells",
+          "FCGR3A+ monocytes",
+          "NK cells",
+          "Platelets",
+          "T cells"
+        ]
+      },
+      "question": "Infer the most likely cell-type label despite masked canonical markers.",
+      "expected_answer_schema": {
+        "predicted_label": "string",
+        "secondary_supporting_genes": [
+          "string"
+        ],
+        "uncertainty_comment": "string",
+        "rationale": "string"
+      }
+    },
+    {
+      "task_id": "task_masked_marker_recovery_cluster_4",
+      "task_type": "masked_marker_recovery",
+      "difficulty": "expert",
+      "scientific_premise": "Canonical marker genes have been deliberately removed. The solver must infer the likely cell identity from secondary evidence.",
+      "input_given_to_solver": {
+        "cluster_id": "4",
+        "visible_filtered_marker_genes": [
+          "PRF1",
+          "CTSW",
+          "CST7",
+          "HLA-C",
+          "GZMA",
+          "FGFBP2",
+          "HLA-A",
+          "CD247",
+          "SPON2",
+          "FCGR3A",
+          "HLA-B",
+          "GZMM"
+        ],
+        "number_of_masked_markers": 3,
+        "candidate_labels": [
+          "B cells",
+          "CD14+ monocytes",
+          "Cycling cells",
+          "Cytotoxic T cells",
+          "Dendritic cells",
+          "FCGR3A+ monocytes",
+          "NK cells",
+          "Platelets",
+          "T cells"
+        ]
+      },
+      "question": "Infer the most likely cell-type label despite masked canonical markers.",
+      "expected_answer_schema": {
+        "predicted_label": "string",
+        "secondary_supporting_genes": [
+          "string"
+        ],
+        "uncertainty_comment": "string",
+        "rationale": "string"
+      }
+    },
+    {
+      "task_id": "task_masked_marker_recovery_cluster_7",
+      "task_type": "masked_marker_recovery",
+      "difficulty": "expert",
+      "scientific_premise": "Canonical marker genes have been deliberately removed. The solver must infer the likely cell identity from secondary evidence.",
+      "input_given_to_solver": {
+        "cluster_id": "7",
+        "visible_filtered_marker_genes": [
+          "SDPR",
+          "GNG11",
+          "NRGN",
+          "GPX1",
+          "SPARC",
+          "TPM4",
+          "RGS18",
+          "CALM3",
+          "RGS10",
+          "TAGLN2",
+          "MYL6",
+          "OAZ1",
+          "GP9"
+        ],
+        "number_of_masked_markers": 2,
+        "candidate_labels": [
+          "B cells",
+          "CD14+ monocytes",
+          "Cycling cells",
+          "Cytotoxic T cells",
+          "Dendritic cells",
+          "FCGR3A+ monocytes",
+          "NK cells",
+          "Platelets",
+          "T cells"
+        ]
+      },
+      "question": "Infer the most likely cell-type label despite masked canonical markers.",
+      "expected_answer_schema": {
+        "predicted_label": "string",
+        "secondary_supporting_genes": [
+          "string"
+        ],
+        "uncertainty_comment": "string",
+        "rationale": "string"
+      }
+    }
+  ]
+}
