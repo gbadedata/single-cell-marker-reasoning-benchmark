@@ -1,0 +1,5 @@
+task_family,public_task_file,task_count
+hidden_cluster_annotation,/home/gbadedata/projects/bioinformatics/single-cell-benchmark-suite/single-cell-marker-reasoning-benchmark/benchmark_tasks/public/hidden_cluster_annotation_tasks.json,9
+marker_contradiction_detection,/home/gbadedata/projects/bioinformatics/single-cell-benchmark-suite/single-cell-marker-reasoning-benchmark/benchmark_tasks/public/marker_contradiction_tasks.json,2
+masked_marker_recovery,/home/gbadedata/projects/bioinformatics/single-cell-benchmark-suite/single-cell-marker-reasoning-benchmark/benchmark_tasks/public/masked_marker_recovery_tasks.json,5
+total,all public task files,16

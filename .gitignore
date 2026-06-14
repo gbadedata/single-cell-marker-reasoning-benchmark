@@ -45,3 +45,8 @@ benchmark_tasks/oracle_outputs/*
 # OS/editor
 .DS_Store
 .vscode/
+
+# Keep selected final portfolio outputs
+!results/figures/umap_by_leiden.png
+!results/figures/umap_by_annotation.png
+!results/tables/benchmark_task_summary.csv
