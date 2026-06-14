@@ -1,0 +1,103 @@
+docker run --rm single-cell-marker-benchmark:latest conda run --no-capture-output -n sc-marker-benchmark bash -lc "make pipeline"
+PYTHONPATH=src python scripts/01_download_data.py
+Downloading/loading PBMC3k via scanpy.datasets.pbmc3k()...
+Loaded AnnData shape: (2700, 32738)
+obs columns: []
+var columns: ['gene_ids']
+Saved raw dataset to: data/raw/pbmc3k_raw.h5ad
+PYTHONPATH=src python scripts/02_preprocess.py
+Processed AnnData:
+AnnData object with n_obs × n_vars = 2694 × 2000
+    obs: 'n_genes_by_counts', 'total_counts', 'total_counts_mt', 'pct_counts_mt', 'n_genes', 'leiden'
+    var: 'gene_ids', 'mt', 'n_cells_by_counts', 'mean_counts', 'pct_dropout_by_counts', 'total_counts', 'n_cells', 'highly_variable', 'means', 'dispersions', 'dispersions_norm', 'mean', 'std'
+    uns: 'log1p', 'hvg', 'pca', 'neighbors', 'umap', 'leiden'
+    obsm: 'X_pca', 'X_umap'
+    varm: 'PCs'
+    layers: 'counts'
+    obsp: 'distances', 'connectivities'
+Shape: (2694, 2000)
+obs columns: ['n_genes_by_counts', 'total_counts', 'total_counts_mt', 'pct_counts_mt', 'n_genes', 'leiden']
+var columns: ['gene_ids', 'mt', 'n_cells_by_counts', 'mean_counts', 'pct_dropout_by_counts', 'total_counts', 'n_cells', 'highly_variable', 'means', 'dispersions', 'dispersions_norm', 'mean', 'std']
+obsm keys: ['X_pca', 'X_umap']
+uns keys: ['log1p', 'hvg', 'pca', 'neighbors', 'umap', 'leiden']
+Leiden clusters: ['0', '1', '2', '3', '4', '5', '6', '7', '8']
+PYTHONPATH=src python scripts/03_rank_markers.py
+Marker ranking complete.
+AnnData object with n_obs × n_vars = 2694 × 2000
+    obs: 'n_genes_by_counts', 'total_counts', 'total_counts_mt', 'pct_counts_mt', 'n_genes', 'leiden'
+    var: 'gene_ids', 'mt', 'n_cells_by_counts', 'mean_counts', 'pct_dropout_by_counts', 'total_counts', 'n_cells', 'highly_variable', 'means', 'dispersions', 'dispersions_norm', 'mean', 'std'
+    uns: 'hvg', 'leiden', 'log1p', 'neighbors', 'pca', 'umap', 'rank_genes_groups'
+    obsm: 'X_pca', 'X_umap'
+    varm: 'PCs'
+    layers: 'counts'
+    obsp: 'connectivities', 'distances'
+Raw marker table shape: (450, 6)
+Filtered marker table shape: (169, 6)
+Raw marker columns: ['group', 'names', 'scores', 'logfoldchanges', 'pvals', 'pvals_adj']
+Clusters: ['0', '1', '2', '3', '4', '5', '6', '7', '8']
+
+Top filtered markers per cluster:
+Cluster 0: LDHB, CD3D, LTB, CD3E, IL32, IL7R, JUNB, NPM1, TMEM66
+Cluster 1: LYZ, S100A9, S100A8, TYROBP, FTL, CST3, FTH1, FCN1, S100A6, LGALS1
+Cluster 2: CD74, CD79A, HLA-DRA, CD79B, HLA-DPB1, MS4A1, HLA-DQA1, HLA-DRB1, HLA-DQB1, CD37
+Cluster 3: CCL5, NKG7, GZMA, CST7, IL32, CTSW, HLA-C, GZMK, HLA-A, CD3D
+Cluster 4: NKG7, GNLY, GZMB, PRF1, CTSW, CST7, HLA-C, GZMA, FGFBP2, HLA-A
+Cluster 5: LST1, FCER1G, FCGR3A, AIF1, COTL1, IFITM2, IFITM3, FTH1, SAT1, SERPINA1
+Cluster 6: HLA-DPA1, HLA-DPB1, HLA-DRA, HLA-DRB1, CD74, HLA-DQA1, CST3, FCER1A, HLA-DRB5, HLA-DMA
+Cluster 7: SDPR, PF4, GNG11, PPBP, NRGN, GPX1, SPARC, TPM4, RGS18, CALM3
+Cluster 8: KIAA0101, ACTG1, CFL1, GAPDH, SLC25A5, TYMS, TUBB, ZWINT, ACTB, PSMB2
+PYTHONPATH=src python scripts/04_annotate_clusters.py
+Cluster annotation table created.
+  cluster  ...                                              notes
+0       0  ...  T-cell markers present; broad cluster likely i...
+1       1  ...          Strong classical monocyte marker profile.
+2       2  ...  Strong B-cell and antigen-presentation marker ...
+3       3  ...  T-cell marker CD3D plus cytotoxic markers; ove...
+4       4  ...  Strong NK/cytotoxic marker profile with GNLY, ...
+5       5  ...        Non-classical monocyte-like marker profile.
+6       6  ...  Antigen-presentation genes and FCER1A support ...
+7       7  ...                    Strong platelet marker profile.
+8       8  ...  Cell-cycle/proliferation-associated genes; sma...
+
+[9 rows x 6 columns]
+
+Saved:
+- results/tables/cluster_annotations.csv
+- data/processed/pbmc3k_annotated.h5ad
+PYTHONPATH=src python scripts/05_generate_benchmark_tasks.py
+Benchmark task generation complete.
+
+Public task files:
+- benchmark_tasks/public/hidden_cluster_annotation_tasks.json: 9 tasks
+- benchmark_tasks/public/marker_contradiction_tasks.json: 2 tasks
+- benchmark_tasks/public/masked_marker_recovery_tasks.json: 5 tasks
+
+Hidden answer files:
+- benchmark_tasks/hidden/hidden_cluster_annotation_answers.json: 9 hidden answers
+- benchmark_tasks/hidden/marker_contradiction_answers.json: 2 hidden answers
+- benchmark_tasks/hidden/masked_marker_recovery_answers.json: 5 hidden answers
+PYTHONPATH=src python scripts/06_generate_oracle_outputs.py
+Oracle output generation complete.
+- benchmark_tasks/oracle_outputs/hidden_cluster_annotation_oracle_outputs.json: 9 oracle outputs
+- benchmark_tasks/oracle_outputs/marker_contradiction_oracle_outputs.json: 2 oracle outputs
+- benchmark_tasks/oracle_outputs/masked_marker_recovery_oracle_outputs.json: 5 oracle outputs
+PYTHONPATH=src python scripts/07_score_solver_answers.py
+Solver answer scoring complete.
+{
+  "total_answers": 3,
+  "correct_answers": 3,
+  "accuracy": 1.0,
+  "average_score": 0.923
+}
+
+Detailed report saved to:
+results/reports/sample_solver_score_report.json
+PYTHONPATH=src python scripts/08_generate_calibration_assets.py
+Calibration assets generated.
+- benchmark_tasks/calibration_logs/calibration_log_template.json
+  keys: ['project', 'created_at_utc', 'purpose', 'difficulty_categories', 'calibration_fields']
+- benchmark_tasks/calibration_logs/initial_task_difficulty_review.json
+  keys: ['project', 'created_at_utc', 'review_scope', 'important_limitation', 'task_type_reviews']
+PYTHONPATH=src pytest -q
+..................................                                       [100%]
+34 passed in 5.65s
