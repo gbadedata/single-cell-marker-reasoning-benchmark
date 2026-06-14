@@ -51,14 +51,14 @@ def rank_marker_genes(
     )
 
     marker_df = sc.get.rank_genes_groups_df(adata, group=None)
-    marker_df = marker_df.groupby("group", group_keys=False).head(n_genes)
+    marker_df = marker_df.groupby("group", group_keys=False, observed=False).head(n_genes)
 
     marker_table = Path(marker_table_path)
     marker_table.parent.mkdir(parents=True, exist_ok=True)
     marker_df.to_csv(marker_table, index=False)
 
     filtered_df = marker_df[marker_df["names"].map(is_informative_gene)].copy()
-    filtered_df = filtered_df.groupby("group", group_keys=False).head(filtered_top_n)
+    filtered_df = filtered_df.groupby("group", group_keys=False, observed=False).head(filtered_top_n)
 
     filtered_marker_table = Path(filtered_marker_table_path)
     filtered_marker_table.parent.mkdir(parents=True, exist_ok=True)
