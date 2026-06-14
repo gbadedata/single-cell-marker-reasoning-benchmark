@@ -1,0 +1,5 @@
+Downloading/loading PBMC3k via scanpy.datasets.pbmc3k()...
+Loaded AnnData shape: (2700, 32738)
+obs columns: []
+var columns: ['gene_ids']
+Saved raw dataset to: data/raw/pbmc3k_raw.h5ad

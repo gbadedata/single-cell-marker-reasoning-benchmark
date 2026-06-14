@@ -1,0 +1,24 @@
+name: sc-marker-benchmark
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python=3.10
+  - pip
+  - numpy
+  - pandas
+  - scipy
+  - scikit-learn
+  - matplotlib
+  - jupyterlab
+  - ipykernel
+  - scanpy
+  - anndata
+  - leidenalg
+  - python-igraph
+  - pytest
+  - pyyaml
+  - rich
+  - typer
+  - pip:
+      - plotly

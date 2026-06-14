@@ -1,0 +1,24 @@
+project:
+  name: single-cell-marker-reasoning-benchmark
+  version: 0.1.0
+
+dataset:
+  name: pbmc3k
+  source: scanpy.datasets.pbmc3k
+  raw_output: data/raw/pbmc3k_raw.h5ad
+  processed_output: data/processed/pbmc3k_processed.h5ad
+
+preprocessing:
+  min_genes_per_cell: 200
+  min_cells_per_gene: 3
+  max_pct_mito: 10
+  target_sum: 10000
+  n_top_genes: 2000
+  n_pcs: 40
+  n_neighbors: 10
+  leiden_resolution: 0.8
+
+benchmark:
+  random_seed: 42
+  marker_top_n: 15
+  masked_marker_count: 3

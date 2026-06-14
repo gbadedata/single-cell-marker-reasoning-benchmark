@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Environments
+.env
+.venv/
+venv/
+*.conda
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data
+data/raw/*
+data/interim/*
+data/processed/*
+data/external/*
+!data/raw/.gitkeep
+!data/interim/.gitkeep
+!data/processed/.gitkeep
+!data/external/.gitkeep
+
+# Results
+results/figures/*
+results/tables/*
+results/metrics/*
+results/reports/*
+!results/figures/.gitkeep
+!results/tables/.gitkeep
+!results/metrics/.gitkeep
+!results/reports/.gitkeep
+
+# Hidden benchmark answers
+benchmark_tasks/hidden/*
+benchmark_tasks/oracle_outputs/*
+!benchmark_tasks/hidden/.gitkeep
+!benchmark_tasks/oracle_outputs/.gitkeep
+
+# OS/editor
+.DS_Store
+.vscode/

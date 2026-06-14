@@ -1,0 +1,36 @@
+.
+├── benchmark_tasks
+│   ├── calibration_logs
+│   ├── hidden
+│   ├── oracle_outputs
+│   └── public
+├── configs
+│   └── project_config.yaml
+├── data
+│   ├── external
+│   ├── interim
+│   ├── pbmc3k_raw.h5ad
+│   ├── processed
+│   └── raw
+│       └── pbmc3k_raw.h5ad
+├── docs
+│   └── evidence
+│       └── 01_project_tree.txt
+├── environment.yml
+├── notebooks
+├── results
+│   ├── figures
+│   ├── metrics
+│   ├── reports
+│   └── tables
+├── scripts
+│   └── 01_download_data.py
+├── src
+│   └── scbench
+│       └── __init__.py
+└── tests
+    ├── __pycache__
+    │   └── test_data_io.cpython-310-pytest-9.0.3.pyc
+    └── test_data_io.py
+
+25 directories, 9 files
