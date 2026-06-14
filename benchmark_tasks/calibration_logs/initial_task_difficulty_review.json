@@ -1,6 +1,6 @@
 {
   "project": "single-cell-marker-reasoning-benchmark",
-  "created_at_utc": "2026-06-14T20:02:53.262323+00:00",
+  "created_at_utc": "2026-06-14T22:49:32.495758+00:00",
   "review_scope": "Initial human design review before external solver calibration.",
   "important_limitation": "This is not yet empirical frontier-model calibration. It is a design-stage difficulty review. Real calibration requires running tasks against one or more human or model solvers and recording scored attempts.",
   "task_type_reviews": [

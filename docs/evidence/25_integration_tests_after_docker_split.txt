@@ -1,0 +1,3 @@
+PYTHONPATH=src pytest -q -m "integration"
+..........                                                               [100%]
+10 passed, 24 deselected in 2.09s

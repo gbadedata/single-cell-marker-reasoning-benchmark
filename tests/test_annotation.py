@@ -1,4 +1,5 @@
 from pathlib import Path
+import pytest
 import pandas as pd
 import scanpy as sc
 
@@ -16,11 +17,13 @@ EXPECTED_LABELS = {
 }
 
 
+@pytest.mark.integration
 def test_annotation_table_exists():
     path = Path("results/tables/cluster_annotations.csv")
     assert path.exists(), "Cluster annotation table was not found."
 
 
+@pytest.mark.integration
 def test_annotation_table_has_expected_labels():
     df = pd.read_csv("results/tables/cluster_annotations.csv")
 
@@ -29,11 +32,13 @@ def test_annotation_table_has_expected_labels():
     assert {"cluster", "label", "confidence", "evidence_genes", "top_filtered_markers", "notes"}.issubset(df.columns)
 
 
+@pytest.mark.integration
 def test_annotated_anndata_exists():
     path = Path("data/processed/pbmc3k_annotated.h5ad")
     assert path.exists(), "Annotated AnnData file was not found."
 
 
+@pytest.mark.integration
 def test_annotated_anndata_has_annotation_columns():
     adata = sc.read_h5ad("data/processed/pbmc3k_annotated.h5ad")
 
@@ -43,6 +48,7 @@ def test_annotated_anndata_has_annotation_columns():
     assert adata.obs["annotation_confidence"].notna().all()
 
 
+@pytest.mark.integration
 def test_annotation_confidence_values_are_controlled():
     adata = sc.read_h5ad("data/processed/pbmc3k_annotated.h5ad")
     observed = set(adata.obs["annotation_confidence"].astype(str).unique())

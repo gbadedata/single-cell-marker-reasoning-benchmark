@@ -1,0 +1,20 @@
+.git
+.gitignore
+__pycache__/
+*.pyc
+.pytest_cache/
+.ipynb_checkpoints/
+.venv/
+venv/
+.env
+
+# Large/generated data files
+data/raw/*.h5ad
+data/processed/*.h5ad
+
+# Local notebook checkpoints
+notebooks/.ipynb_checkpoints/
+
+# OS/editor
+.DS_Store
+.vscode/

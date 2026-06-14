@@ -1,12 +1,15 @@
 from pathlib import Path
+import pytest
 import scanpy as sc
 
 
+@pytest.mark.integration
 def test_processed_pbmc3k_exists():
     path = Path("data/processed/pbmc3k_processed.h5ad")
     assert path.exists(), "Processed PBMC3k dataset was not found."
 
 
+@pytest.mark.integration
 def test_processed_pbmc3k_has_expected_structure():
     adata = sc.read_h5ad("data/processed/pbmc3k_processed.h5ad")
 
@@ -24,6 +27,7 @@ def test_processed_pbmc3k_has_expected_structure():
     assert "counts" in adata.layers
 
 
+@pytest.mark.integration
 def test_processed_pbmc3k_has_multiple_clusters():
     adata = sc.read_h5ad("data/processed/pbmc3k_processed.h5ad")
     clusters = adata.obs["leiden"].unique().tolist()
