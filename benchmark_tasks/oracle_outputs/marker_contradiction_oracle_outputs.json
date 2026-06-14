@@ -1,0 +1,28 @@
+{
+  "oracle_outputs": [
+    {
+      "task_id": "task_marker_contradiction_cytotoxic_t_vs_nk",
+      "oracle_response": {
+        "contradiction_detected": true,
+        "contradiction_type": "T-cell and NK-like cytotoxic marker overlap",
+        "supporting_labels": [
+          "Cytotoxic T cells",
+          "NK cells"
+        ],
+        "rationale": "The task compares marker profiles from two clusters with overlapping biological signatures. The expected answer must identify the ambiguity type."
+      }
+    },
+    {
+      "task_id": "task_marker_contradiction_apc_bcell_vs_dc",
+      "oracle_response": {
+        "contradiction_detected": true,
+        "contradiction_type": "antigen-presentation marker overlap",
+        "supporting_labels": [
+          "B cells",
+          "Dendritic cells"
+        ],
+        "rationale": "The task compares marker profiles from two clusters with overlapping biological signatures. The expected answer must identify the ambiguity type."
+      }
+    }
+  ]
+}

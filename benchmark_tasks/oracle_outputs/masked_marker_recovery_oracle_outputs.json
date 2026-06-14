@@ -1,0 +1,116 @@
+{
+  "oracle_outputs": [
+    {
+      "task_id": "task_masked_marker_recovery_cluster_0",
+      "oracle_response": {
+        "predicted_label": "T cells",
+        "masked_genes": [
+          "CD3D",
+          "CD3E",
+          "IL7R"
+        ],
+        "secondary_supporting_genes": [
+          "LDHB",
+          "LTB",
+          "IL32",
+          "JUNB",
+          "NPM1",
+          "TMEM66"
+        ],
+        "uncertainty_comment": "Canonical markers were intentionally masked, so the answer should rely on secondary marker evidence and explicitly acknowledge uncertainty.",
+        "rationale": "The oracle label is derived from the marker-based annotation table, with canonical markers removed from the solver-facing input."
+      }
+    },
+    {
+      "task_id": "task_masked_marker_recovery_cluster_1",
+      "oracle_response": {
+        "predicted_label": "CD14+ monocytes",
+        "masked_genes": [
+          "LYZ",
+          "S100A8",
+          "S100A9"
+        ],
+        "secondary_supporting_genes": [
+          "TYROBP",
+          "FTL",
+          "CST3",
+          "FTH1",
+          "FCN1",
+          "S100A6",
+          "LGALS1",
+          "LGALS2"
+        ],
+        "uncertainty_comment": "Canonical markers were intentionally masked, so the answer should rely on secondary marker evidence and explicitly acknowledge uncertainty.",
+        "rationale": "The oracle label is derived from the marker-based annotation table, with canonical markers removed from the solver-facing input."
+      }
+    },
+    {
+      "task_id": "task_masked_marker_recovery_cluster_2",
+      "oracle_response": {
+        "predicted_label": "B cells",
+        "masked_genes": [
+          "CD79A",
+          "CD79B",
+          "MS4A1"
+        ],
+        "secondary_supporting_genes": [
+          "CD74",
+          "HLA-DRA",
+          "HLA-DPB1",
+          "HLA-DQA1",
+          "HLA-DRB1",
+          "HLA-DQB1",
+          "CD37",
+          "HLA-DPA1"
+        ],
+        "uncertainty_comment": "Canonical markers were intentionally masked, so the answer should rely on secondary marker evidence and explicitly acknowledge uncertainty.",
+        "rationale": "The oracle label is derived from the marker-based annotation table, with canonical markers removed from the solver-facing input."
+      }
+    },
+    {
+      "task_id": "task_masked_marker_recovery_cluster_4",
+      "oracle_response": {
+        "predicted_label": "NK cells",
+        "masked_genes": [
+          "GNLY",
+          "GZMB",
+          "NKG7"
+        ],
+        "secondary_supporting_genes": [
+          "PRF1",
+          "CTSW",
+          "CST7",
+          "HLA-C",
+          "GZMA",
+          "FGFBP2",
+          "HLA-A",
+          "CD247"
+        ],
+        "uncertainty_comment": "Canonical markers were intentionally masked, so the answer should rely on secondary marker evidence and explicitly acknowledge uncertainty.",
+        "rationale": "The oracle label is derived from the marker-based annotation table, with canonical markers removed from the solver-facing input."
+      }
+    },
+    {
+      "task_id": "task_masked_marker_recovery_cluster_7",
+      "oracle_response": {
+        "predicted_label": "Platelets",
+        "masked_genes": [
+          "PF4",
+          "PPBP"
+        ],
+        "secondary_supporting_genes": [
+          "SDPR",
+          "GNG11",
+          "NRGN",
+          "GPX1",
+          "SPARC",
+          "TPM4",
+          "RGS18",
+          "CALM3"
+        ],
+        "uncertainty_comment": "Canonical markers were intentionally masked, so the answer should rely on secondary marker evidence and explicitly acknowledge uncertainty.",
+        "rationale": "The oracle label is derived from the marker-based annotation table, with canonical markers removed from the solver-facing input."
+      }
+    }
+  ]
+}

@@ -1,0 +1,137 @@
+{
+  "oracle_outputs": [
+    {
+      "task_id": "task_hidden_annotation_cluster_0",
+      "oracle_response": {
+        "predicted_label": "T cells",
+        "supporting_genes": [
+          "CD3D",
+          "CD3E",
+          "IL7R",
+          "LTB"
+        ],
+        "confidence": "medium",
+        "rationale": "T-cell markers present; broad cluster likely includes naive/memory T cells."
+      }
+    },
+    {
+      "task_id": "task_hidden_annotation_cluster_1",
+      "oracle_response": {
+        "predicted_label": "CD14+ monocytes",
+        "supporting_genes": [
+          "LYZ",
+          "S100A8",
+          "S100A9",
+          "FCN1",
+          "CST3"
+        ],
+        "confidence": "high",
+        "rationale": "Strong classical monocyte marker profile."
+      }
+    },
+    {
+      "task_id": "task_hidden_annotation_cluster_2",
+      "oracle_response": {
+        "predicted_label": "B cells",
+        "supporting_genes": [
+          "CD79A",
+          "CD79B",
+          "MS4A1",
+          "CD74",
+          "HLA-DRA"
+        ],
+        "confidence": "high",
+        "rationale": "Strong B-cell and antigen-presentation marker profile."
+      }
+    },
+    {
+      "task_id": "task_hidden_annotation_cluster_3",
+      "oracle_response": {
+        "predicted_label": "Cytotoxic T cells",
+        "supporting_genes": [
+          "CD3D",
+          "CCL5",
+          "NKG7",
+          "GZMA",
+          "CST7"
+        ],
+        "confidence": "medium",
+        "rationale": "T-cell marker CD3D plus cytotoxic markers; overlaps with NK-like cytotoxic signature."
+      }
+    },
+    {
+      "task_id": "task_hidden_annotation_cluster_4",
+      "oracle_response": {
+        "predicted_label": "NK cells",
+        "supporting_genes": [
+          "NKG7",
+          "GNLY",
+          "GZMB",
+          "PRF1",
+          "FGFBP2"
+        ],
+        "confidence": "high",
+        "rationale": "Strong NK/cytotoxic marker profile with GNLY, GZMB, PRF1."
+      }
+    },
+    {
+      "task_id": "task_hidden_annotation_cluster_5",
+      "oracle_response": {
+        "predicted_label": "FCGR3A+ monocytes",
+        "supporting_genes": [
+          "LST1",
+          "FCER1G",
+          "FCGR3A",
+          "AIF1",
+          "IFITM3"
+        ],
+        "confidence": "high",
+        "rationale": "Non-classical monocyte-like marker profile."
+      }
+    },
+    {
+      "task_id": "task_hidden_annotation_cluster_6",
+      "oracle_response": {
+        "predicted_label": "Dendritic cells",
+        "supporting_genes": [
+          "HLA-DPA1",
+          "HLA-DPB1",
+          "HLA-DRA",
+          "FCER1A",
+          "CST3"
+        ],
+        "confidence": "medium",
+        "rationale": "Antigen-presentation genes and FCER1A support dendritic/APC-like identity."
+      }
+    },
+    {
+      "task_id": "task_hidden_annotation_cluster_7",
+      "oracle_response": {
+        "predicted_label": "Platelets",
+        "supporting_genes": [
+          "PPBP",
+          "PF4",
+          "GNG11",
+          "SDPR",
+          "NRGN"
+        ],
+        "confidence": "high",
+        "rationale": "Strong platelet marker profile."
+      }
+    },
+    {
+      "task_id": "task_hidden_annotation_cluster_8",
+      "oracle_response": {
+        "predicted_label": "Cycling cells",
+        "supporting_genes": [
+          "KIAA0101",
+          "TYMS",
+          "ZWINT",
+          "TUBB"
+        ],
+        "confidence": "medium",
+        "rationale": "Cell-cycle/proliferation-associated genes; small cluster, interpret cautiously."
+      }
+    }
+  ]
+}
