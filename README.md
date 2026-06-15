@@ -657,6 +657,9 @@ docs/evidence/
 
 Important evidence files:
 
+A full claim-to-evidence map is available at [`docs/evidence_map.md`](docs/evidence_map.md).
+
+
 | Evidence file                                 | What it proves                      |
 | --------------------------------------------- | ----------------------------------- |
 | `01_project_tree.txt`                         | Initial project structure           |
