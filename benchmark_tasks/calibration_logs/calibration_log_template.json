@@ -1,6 +1,6 @@
 {
   "project": "single-cell-marker-reasoning-benchmark",
-  "created_at_utc": "2026-06-14T22:49:32.495167+00:00",
+  "created_at_utc": "project-static-template",
   "purpose": "Template for recording benchmark task calibration against human solvers, LLMs, or other model systems.",
   "difficulty_categories": {
     "too_easy": "Most solvers answer correctly with shallow marker lookup or obvious label matching.",

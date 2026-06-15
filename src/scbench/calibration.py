@@ -3,7 +3,6 @@ from __future__ import annotations
 import json
 from pathlib import Path
 from typing import Any
-from datetime import datetime, timezone
 
 
 DIFFICULTY_RULES = {
@@ -25,7 +24,7 @@ def create_calibration_log_template(
 ) -> dict[str, Any]:
     payload = {
         "project": "single-cell-marker-reasoning-benchmark",
-        "created_at_utc": datetime.now(timezone.utc).isoformat(),
+        "created_at_utc": "project-static-template",
         "purpose": (
             "Template for recording benchmark task calibration against human solvers, "
             "LLMs, or other model systems."
@@ -57,7 +56,7 @@ def create_initial_calibration_review(
 ) -> dict[str, Any]:
     review = {
         "project": "single-cell-marker-reasoning-benchmark",
-        "created_at_utc": datetime.now(timezone.utc).isoformat(),
+        "created_at_utc": "project-static-template",
         "review_scope": "Initial human design review before external solver calibration.",
         "important_limitation": (
             "This is not yet empirical frontier-model calibration. It is a design-stage "
