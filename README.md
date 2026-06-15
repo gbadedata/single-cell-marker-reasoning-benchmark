@@ -886,7 +886,7 @@ The current PBMC3k workflow remains valid, but future scaling should address spa
 | Docker unit testing             | Complete            |
 | Docker full pipeline test       | Complete            |
 | GitHub repository               | Published           |
-| GitHub Actions CI               | Not yet implemented |
+| GitHub Actions CI               | Complete            |
 | Visual figures in README        | Not yet implemented |
 | Empirical benchmark calibration | Not yet implemented |
 
@@ -901,7 +901,6 @@ This project is intentionally transparent about its current limitations.
 3. The benchmark has 16 tasks, so it is a prototype-scale benchmark.
 4. The calibration framework is design-stage, not empirical calibration across multiple solvers or models.
 5. The current README does not yet include UMAP images or marker plots.
-6. GitHub Actions CI has not yet been added.
 7. The workflow is suitable for PBMC3k scale but would need memory and performance review for much larger datasets.
 8. Scanpy warnings about sparse densification and Leiden backend changes should be addressed in future hardening.
 
@@ -914,8 +913,7 @@ Planned improvements include:
 1. Add UMAP figures by Leiden cluster and marker-derived annotation.
 2. Add marker-gene heatmaps or dot plots.
 3. Add a benchmark task summary CSV.
-4. Add GitHub Actions CI for unit tests.
-5. Add optional Docker-based CI.
+4. Add optional Docker-based CI for full pipeline validation.
 6. Add empirical calibration using human or model solvers.
 7. Add more datasets beyond PBMC3k.
 8. Add stronger task difficulty tiers.
