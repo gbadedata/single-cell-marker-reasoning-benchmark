@@ -298,7 +298,7 @@ results/tables/benchmark_task_summary.csv
 
 The benchmark contains three task families.
 
-### 9.1 Hidden Cluster Annotation
+### 10.1 Hidden Cluster Annotation
 
 The solver receives marker genes for a cluster and must infer the most likely cell type.
 
@@ -320,7 +320,7 @@ Number of tasks:
 9
 ```
 
-### 9.2 Marker Contradiction Detection
+### 10.2 Marker Contradiction Detection
 
 The solver receives marker evidence that may create ambiguity or contradiction between related immune-cell labels.
 
@@ -342,7 +342,7 @@ Number of tasks:
 2
 ```
 
-### 9.3 Masked Marker Recovery
+### 10.3 Masked Marker Recovery
 
 The solver receives partially masked marker evidence and must recover the likely cell identity using remaining supporting evidence.
 
@@ -535,7 +535,7 @@ This is not yet an empirical frontier-model calibration study. Empirical calibra
 
 This project supports both local and Docker-based reproducibility.
 
-### 13.1 Local environment
+### 14.1 Local environment
 
 Create the Conda environment:
 
@@ -558,10 +558,10 @@ PYTHONPATH=src pytest -q
 Current full local test status:
 
 ```text
-34 passed
+36 passed
 ```
 
-### 13.2 Makefile commands
+### 14.2 Makefile commands
 
 Run unit tests:
 
@@ -593,7 +593,7 @@ Pipeline target sequence:
 download → preprocess → markers → annotate → tasks → oracles → score → calibration → test
 ```
 
-### 13.3 Docker reproducibility
+### 14.3 Docker reproducibility
 
 Build the Docker image:
 
@@ -676,6 +676,7 @@ A full claim-to-evidence map is available at [`docs/evidence_map.md`](docs/evide
 | `25_integration_tests_after_docker_split.txt` | Integration tests after test split  |
 | `26_docker_unit_test_output.txt`              | Docker unit tests completed         |
 | `27_docker_full_pipeline_test_output.txt`     | Full Docker pipeline completed      |
+| `28_visual_outputs.txt`                       | Visual outputs generated            |
 
 The evidence files are intentionally kept in the repository to show the project was built, tested, and improved through verifiable stages.
 
@@ -892,7 +893,7 @@ The current PBMC3k workflow remains valid, but future scaling should address spa
 | Docker full pipeline test       | Complete            |
 | GitHub repository               | Published           |
 | GitHub Actions CI               | Complete            |
-| Visual figures in README        | Not yet implemented |
+| Visual figures in README        | Complete            |
 | Empirical benchmark calibration | Not yet implemented |
 
 ---
@@ -905,9 +906,10 @@ This project is intentionally transparent about its current limitations.
 2. Cluster annotations are marker-derived working labels, not experimentally validated ground truth.
 3. The benchmark has 16 tasks, so it is a prototype-scale benchmark.
 4. The calibration framework is design-stage, not empirical calibration across multiple solvers or models.
-5. The current README does not yet include UMAP images or marker plots.
-7. The workflow is suitable for PBMC3k scale but would need memory and performance review for much larger datasets.
-8. Scanpy warnings about sparse densification and Leiden backend changes should be addressed in future hardening.
+5. The current visual layer includes UMAP figures, but does not yet include richer marker-gene dot plots or heatmaps.
+6. The workflow is suitable for PBMC3k scale but would need memory and performance review for much larger datasets.
+7. Scanpy warnings about sparse densification and Leiden backend changes should be addressed in future hardening.
+8. GitHub Actions currently runs unit tests; full Docker pipeline CI is a future hardening improvement.
 
 ---
 
@@ -915,15 +917,16 @@ This project is intentionally transparent about its current limitations.
 
 Planned improvements include:
 
-1. Add UMAP figures by Leiden cluster and marker-derived annotation.
-2. Add marker-gene heatmaps or dot plots.
-3. Add a benchmark task summary CSV.
-4. Add optional Docker-based CI for full pipeline validation.
-6. Add empirical calibration using human or model solvers.
-7. Add more datasets beyond PBMC3k.
-8. Add stronger task difficulty tiers.
-9. Add richer scoring reports with per-task error analysis.
-10. Add a formal evidence map linking every claim in the README to files in the repository.
+1. Add marker-gene heatmaps or dot plots.
+2. Add optional Docker-based CI for full pipeline validation.
+3. Add empirical calibration using human or model solvers.
+4. Add more datasets beyond PBMC3k.
+5. Add stronger task difficulty tiers.
+6. Add richer scoring reports with per-task error analysis.
+7. Add performance profiling for larger datasets.
+8. Package the benchmark as an installable Python package.
+9. Add more benchmark task families beyond marker-gene reasoning.
+10. Add comparative solver evaluation across multiple human or model systems.
 
 ---
 
@@ -1007,4 +1010,4 @@ It shows:
 * Docker reproducibility;
 * evidence-based project documentation.
 
-The project is currently a strong prototype benchmark suite. Its next major improvements are visual result assets, GitHub Actions CI, and empirical calibration.
+The project is currently a strong prototype benchmark suite with reproducible analysis, benchmark assets, visual outputs, Docker validation, CI, and evidence-backed documentation. Its next major improvements are empirical calibration, additional datasets, richer marker-gene visualisations, optional full-pipeline Docker CI, and broader solver evaluation.
